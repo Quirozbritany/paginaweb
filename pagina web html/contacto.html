@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Eyelash Studio </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Nosotros</a></li>
+                <li><a href="pagina2.html">Servicios</a></li>
+                <li><a href="pagina3.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>¡Contáctanos!</h2>
+        <p>Si tienes alguna pregunta o quieres agendar tu cita, no dudes en ponerte en contacto con nosotros. ¡Estamos aquí para ayudarte!</p>
+
+        <form action="enviar_contacto.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefono">Teléfono (opcional):</label>
+            <input type="tel" id="telefono" name="telefono">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <section class="informacion-adicional">
+            <h3>Información de Contacto</h3>
+            <p><strong>Dirección:</strong> Calle Pirules, 16, Estado de México</p>
+            <p><strong>Teléfono:</strong> +5611913758</p>
+            <p><strong>Redes Sociales:</strong></p>
+            <ul>
+                <li><a href="https://www.facebook.com/tuempresa" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/tuempresa" target="_blank">Instagram</a></li>
+            </ul>
+        </section>
+
+        <section class="mapa">
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_URL" width="800" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Eyelash Studio </p>
+    </footer>
+</body>
+</html>
